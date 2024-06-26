@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgray;
+    transition: background-color 0.5s ease;
+}
+.modo-oscuro{
+    background-color: black;
+}
+.modo-oscuro h1{
+    color: white;
+}
+.modo-oscuro p{
+    color: red;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: .625rem;
+    text-align: center;
+}
+
+.navbar{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 1.4375rem;
+}
+
+h1, p{
+    color: #333;
+}
+
+
+/**carrousel**/
+
+.carousel{
+    position: relative;
+    width: 31.25rem;
+    margin: 2.5rem auto;
+
+}
+.carousel-entrada{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.carousel-item{
+    position: relative;
+    display: none;
+    width: 31.25rem;
+    height: 31.25rem;
+    object-fit: cover;
+}
+
+.carousel-item.active{
+    display: block;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.carousel-prev, .carousel-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev{
+    left: 10px;
+}
+.carousel-next{
+    right: 10px;
+}
