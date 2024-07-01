@@ -1,0 +1,11 @@
+#items{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.card-item{
+    width: 15.625rem;
+    height: 18.75rem;
+    border: 1px solid black;
+}

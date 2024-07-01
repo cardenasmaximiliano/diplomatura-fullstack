@@ -69,3 +69,61 @@ botonLogin.addEventListener("click", ()=>{
         }
     } )
 })
+
+
+
+let botonTosty = document.getElementById("botonTosty");
+
+botonTosty.addEventListener("click", () =>{
+    Toastify({
+        text:"PRODUCTO AGREGADO",
+        duration: 1000,
+        position:"left",
+        gravity: "bottom",
+        avatar: "https://img.freepik.com/psd-gratis/nube-png-aislada-fondo-transparente_191095-18048.jpg?w=826&t=st=1719403288~exp=1719403888~hmac=ff358e3a01272681ba96c96990f2ab92e8afb961f6ed705ea6b4e304abedad40",
+        style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          }
+    }).showToast();
+
+
+})
+
+const DateTime = luxon.DateTime;
+
+const fechaHoraActual = DateTime.now();
+
+console.log(fechaHoraActual.toString());
+
+const horaEspecifica = DateTime.local(2023,8,21,13,0);
+
+console.log(horaEspecifica.toString());
+
+
+
+//anime.js
+const box = document.querySelector(".box");
+
+box.addEventListener("click", ()=>{
+
+    anime({
+        targets: '.box',
+  translateX: {
+    value: 250,
+    duration: 800
+  },
+  rotate: {
+    value: 360,
+    duration: 1800,
+    easing: 'easeInOutSine'
+  },
+  scale: {
+    value: 2,
+    duration: 1600,
+    delay: 800,
+    easing: 'easeInOutQuart'
+  },
+  delay: 250 // All properties except 'scale' inherit 250ms delay
+    })
+})
+
